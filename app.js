@@ -1,20 +1,15 @@
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 let submit = document.getElementById('submit');
-
 let morseArray = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....',
     '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.',
     '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-',
-    '-.--', '--..', '/'];
+    '-.--', '--..', '/']; 
 
-    
-
-submit.addEventListener('click', () => {;
-    console.log(input.value);
+submit.addEventListener('click', () => {
     alphabetPosition();
 }
 )
-
 
 const alphabetPosition = () => {
     console.log(input.value);
@@ -32,14 +27,10 @@ const alphabetPosition = () => {
     }
 
     let newArray = result;
-
     newMorseArray = [];
-
     newArray.forEach(element => {
         parseInt(element);
-
         newMorseArray.push(morseArray[element]);
-
         let morseTranslation = newMorseArray.join(" ");
         output.value = morseTranslation;
     })
@@ -48,5 +39,3 @@ const alphabetPosition = () => {
 
 
 
-// would be cool to have a version where each time you time, it adds the morse code letter dynamically to the page,
-// when you do a backspace, it would delete the morse code letter too
