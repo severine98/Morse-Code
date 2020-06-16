@@ -40,7 +40,6 @@
                 }
             }
 
-
             @media screen and (min-width: 850px) {
                 p {
                     display: unset;
@@ -108,7 +107,7 @@
                     }
 
                     &:hover {
-                        color: red;
+                        cursor: pointer;
                     }
                 }
 

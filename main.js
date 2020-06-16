@@ -125,11 +125,6 @@ submit.addEventListener('click', () => {
 })
 
 
-
-
-
-
-
 const textToMorse = () => {
     const morseCodeArray = [];
     const inputArray = input.value.split('');

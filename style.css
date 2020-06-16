@@ -132,7 +132,7 @@
 }
 
 * body #section-2 form i:hover {
-  color: red;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 480px) {
